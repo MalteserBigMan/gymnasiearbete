@@ -1,0 +1,90 @@
+\documentclass[11p]{article}
+% Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyheadings}
+\usepackage[swedish]{babel}
+\usepackage[
+    backend=biber,
+    style=authoryear-ibid,
+    sorting=ynt
+]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%Källor
+\addbibresource{references.bib}
+\graphicspath{ {./images/} }
+
+% Lite variabler
+\def\email{malte.lindkvist@ga.ntig.se}
+\def\foottitle{PMmall}
+\def\name{Malte Oskar August Lindkvist}
+
+\title{Bakgrunds PM \\ \small Gymnasiearbete}
+\author{\name}
+\date{\today}
+
+\begin{document}
+
+% fixar sidfot
+\lfoot{\footnotesize{\name \\ \email}}
+\rfoot{\footnotesize{\today}}
+\lhead{\sc\footnotesize\foottitle}
+\rhead{\nouppercase{\sc\footnotesize\leftmark}}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+% i Sverige har vi normalt inget indrag vid nytt stycke
+\setlength{\parindent}{0pt}
+% men däremot lite mellanrum
+\setlength{\parskip}{10pt}
+
+\maketitle
+
+\section{Bakgrund}
+I den digitala tidsåldern har tillgänglighet på webben blivit en central fråga.
+Internet är en grundläggande del av vårt dagliga liv, och det är nödvändigt att se till att webbplatser och
+digitalt innehåll är tillgängliga för alla användare, oavsett eventuella funktionsnedsättningar.
+Många länder och organisationer har därför infört webbtillgänglighetslagar och riktlinjer för att främja
+inklusion och tillgänglighet på nätet.
+Dessa riktlinjer kallas för WCAG(Web Content Accessibility Guidelines) och skapades av W3C (World Wide Web Consortium).
+Riktlinjerna måste följas av statliga, kommunala eller offentligt styrda organ
+(enheter som är styrda eller finansierade av offentliga myndigheter eller regeringar).
+\subsection{Nivåer}
+WCAG lagar har olika nivåer, Nivå A innehåller de mest grundläggande och lägsta kraven för webbtillgänglighet vilket gör det
+enklare för personer med funktionsnedsättningar (detta inkluderar även syn och hörsel).
+Nivå AA är en högre grad av tillgänglighet än nivå A, detta gör den mer tillgänglig för en mer utbredd publik än för nivå A.
+Nivå AAA är den högsta nivån av webbtillgänglighet, denna nivå finns det inget krav på att någon hemsida skulle behöva uppfylla
+eftersom de är ofta så oerhört tidskrävande eller svåra att uppfylla, nivå AAA är den högsta ambitionsnivån, slutmålet för tillgänglighet.
+\subsection{Verktyg}
+Hemsidorna/programmen jag kommer använda för att kolla webbtillgängligheten på Arbetsgivarverket.se är ''Wave''(Web Accessibility Evaluation Tools),
+''Lighthouse'' och ''aXe''.
+Lighthouse är ett gratis verktyg som utvecklats av Google som kan hjälpa dig att upptäcka och förbättra fel
+som finns på din eller någon annans hemsida. Den kan även hjälpa till med att identifiera om en hemsida
+följer Webbtillgänglighetslagarna. Medans aXe är en variant skapade av ''Deque''.
+Preety Kumar är VD för Deque Systems och grundade Deque 1999 med visionen att förena webbåtkomst,
+både ur användar och teknikperspektiv.
+
+
+(https://www.tillganglighetskrav.fi/lagar-och-standarder/wcag-2-1/)
+
+
+Min vetenskapliga undersökning syftar till att granska och utvärdera webbtillgängligheten
+på en specifik hemsida (i detta fall Arbetsgivarverket.se) och att bedöma
+i vilken utsträckning den följer de gällande webbtillgänglighetslagarna och riktlinjerna.
+\section{Avgränsningar}
+Sidan i detta fall är Arbetsgivarverket.se.
+Det kommer göras en övergripande undersökning för att ta reda på hur mycket den stämmer överrens med WCAG (2.1) riktlinjer
+och sedan bedöma tillgängligheten på sidan.
+Det är viktigt att notera att undersökningen inte kommer innehålla en bedömning av sidans kvalitet eller innehåll, utan fokuserar
+helt på aspekter relaterade till webbtillgänglighet/WCAG.
+
+
+
+
+
+
+\printbibliography
+
+\end{document}
